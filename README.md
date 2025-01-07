@@ -1,5 +1,5 @@
 # samsung-riscv
-Task 1
+📌Task 1
 
 C program using leafpad editor in terminal on ubuntu
 
