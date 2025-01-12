@@ -27,3 +27,4 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <img width="960" alt="Screenshot 2025-01-12 101933" src="https://github.com/user-attachments/assets/f53b350b-5b17-4195-ba47-65e8abeb64cf" />
 
 -O1 compiler optimization flag assembly code
+<img width="960" alt="Screenshot 2025-01-12 102002" src="https://github.com/user-attachments/assets/657eddd6-d914-4981-b289-03d1971ff321" />
