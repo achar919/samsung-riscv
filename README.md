@@ -16,11 +16,11 @@ c program code converted into assembly code
 
 Run the simulation and observe the performance under the -O1 and -Ofast compiler optimization flags.
 
--👉Ofast compiler optimization flag is used and debugging using the spike debugger
+👉-Ofast compiler optimization flag is used and debugging using the spike debugger
 
 <img width="960" alt="Screenshot 2025-01-12 094244" src="https://github.com/user-attachments/assets/95701be4-f5ed-40a8-a497-0add69554240" />
 
-Ofast compiler optimization flag assembly code
+-Ofast compiler optimization flag assembly code
 
 <img width="960" alt="Screenshot 2025-01-12 102118" src="https://github.com/user-attachments/assets/8cfb70d0-888c-4fe8-a1c4-86d1089a7cc6" />
 
