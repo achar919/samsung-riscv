@@ -23,4 +23,7 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 -Ofast compiler optimization flag assembly code
 
 <img width="960" alt="Screenshot 2025-01-12 102118" src="https://github.com/user-attachments/assets/8cfb70d0-888c-4fe8-a1c4-86d1089a7cc6" />
+👉-O1 compiler optimization flag is used and debugging using the spike debugger
+<img width="960" alt="Screenshot 2025-01-12 101933" src="https://github.com/user-attachments/assets/f53b350b-5b17-4195-ba47-65e8abeb64cf" />
 
+-O1 compiler optimization flag assembly code
