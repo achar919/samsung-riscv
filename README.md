@@ -12,7 +12,7 @@ c program code converted into assembly code
 <img width="960" alt="Screenshot 2025-01-07 213704" src="https://github.com/user-attachments/assets/77471fee-77e3-4555-9483-d2102e7dd644" />
 
 
-📌Task 2
+## 📌Task 2
 
 Run the simulation and observe the performance under the -O1 and -Ofast compiler optimization flags.
 
@@ -30,4 +30,4 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 -O1 compiler optimization flag assembly code
 <img width="960" alt="Screenshot 2025-01-12 102002" src="https://github.com/user-attachments/assets/657eddd6-d914-4981-b289-03d1971ff321" />
 
-📌Task 3
+## 📌Task 3
