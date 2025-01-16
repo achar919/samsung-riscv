@@ -31,3 +31,4 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <img width="960" alt="Screenshot 2025-01-12 102002" src="https://github.com/user-attachments/assets/657eddd6-d914-4981-b289-03d1971ff321" />
 
 ## 📌Task 3
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/56253731-abb4-44b5-b759-3fd662649821" />
