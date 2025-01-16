@@ -42,8 +42,8 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 Breakdown:<br>
 <li>Immediate (20 bits): 000000000000 00100001<br><\li>
 <li>rd (a0 = x10): 01010<br><\li>
-<li>Opcode: 0110111<br><\li>
+<li>Opcode: 0110111<br>
 
 Machine Code:<br>
-<li>Binary: 00000000000000100001010100110111<br><\li>
-<li>Hex: 00021537<br><\li>
+<li>Binary: 00000000000000100001010100110111<br>
+<li>Hex: 00021537<br>
