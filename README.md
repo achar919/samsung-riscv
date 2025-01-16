@@ -1,5 +1,5 @@
 # samsung-riscv
-##📌Task 1
+## 📌Task 1
 
 C program using leafpad editor in terminal on ubuntu
 
@@ -29,3 +29,5 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 
 -O1 compiler optimization flag assembly code
 <img width="960" alt="Screenshot 2025-01-12 102002" src="https://github.com/user-attachments/assets/657eddd6-d914-4981-b289-03d1971ff321" />
+
+📌Task 3
