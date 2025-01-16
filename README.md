@@ -34,8 +34,7 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 👉understand the R, I, S, B, U, and J instruction types.
 
 👉For those 15 instructions, determine the exact 32-bit instruction code in their respective instruction type formats.
-<img width="960" alt="Image" src="https://github.com/user-attachments/assets/56253731-abb4-44b5-b759-3fd662649821" /><br>
-1) Instruction: lui a5, 0x24<br>
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/56253731-abb4-44b5-b759-3fd662649821" /><br>1) Instruction: lui a5, 0x24<br>
 Opcode: 0110111 (7 bits)<br>
 Immediate: 0x21 (20 bits)<br>
 Destination Register (rd): a0 (x10, 5 bits)<br>
