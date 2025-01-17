@@ -38,6 +38,7 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <li>B-type: Branch type<br>
 <li>U-type: Upper immediate type<br>
 <li>J-type: Jump type<br>
+  
 👉For those 15 instructions, determine the exact 32-bit instruction code in their respective instruction type formats.<br>
 
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/56253731-abb4-44b5-b759-3fd662649821" /><br>
