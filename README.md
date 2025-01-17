@@ -124,3 +124,22 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 ### Machine Code:<br>
 <li>Binary: 0001 1000 0000 0101 0000 0101 0001 0011<br>
 <li>Hex: 18050513<br>
+
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/80338182-445a-4dde-86a1-83f38cf968e6" /><br>
+### 6) Instruction: sd ra, 8(sp)<br>
+<li>Opcode: 0100011 (7 bits)<br>
+<li>Immediate: 8 (12 bits, split into two parts: imm[11:5] and imm[4:0])<br>
+<li>Source Register (rs2): ra (x1, 5 bits)<br>
+<li>Base Register (rs1): sp (x2, 5 bits)<br>
+<li>Function (funct3): 011 (3 bits)<br>
+  
+### Breakdown:<br>
+<li>Immediate (8): 000000001000 (split into imm[11:5] = 0000000 and imm[4:0] = 01000)<br>
+<li>rs2 (ra = x1): 00001<br>
+<li>rs1 (sp = x2): 00010<br>
+<li>funct3: 011<br>
+<li>Opcode: 0100011<br>
+
+### Machine Code:<br>
+<li>Binary:  0000 0000 0001 0001 0011 0100 0010 0011 <br>
+<li>Hex: 00113423<br>
