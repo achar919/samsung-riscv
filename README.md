@@ -143,3 +143,5 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 ### Machine Code:<br>
 <li>Binary:  0000 0000 0001 0001 0011 0100 0010 0011 <br>
 <li>Hex: 00113423<br>
+
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/cfab5b3b-1884-4904-90c0-71c7f723802d" /><b>
