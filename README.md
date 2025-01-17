@@ -192,7 +192,7 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <li>Binary: 0000 0000 0000 0000 0000 0101 0001 0011<br>
 <li>Hex: 00000513<br>
 
-<img width="960" alt="Image" src="https://github.com/user-attachments/assets/9bcc19af-cd39-40df-8128-0e9ad2b9e626" />
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/9bcc19af-cd39-40df-8128-0e9ad2b9e626" /><br>
 ### 10) Instruction: addi sp, sp, 16<br>
 <li>Opcode: 0010011 (7 bits)<br>
 <li>Immediate: 16 (12 bits)<br>
