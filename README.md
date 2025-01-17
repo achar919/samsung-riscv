@@ -255,3 +255,18 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 ### Machine Code:<br>
 <li>Binary:  0000 0000 0000 0111 1000 1000 0110 0011 <br>
 <li>Hex: 00078863<br>
+
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/d1316c6e-907a-47bb-8274-455e1edb9056" /><br>
+### 11) Instruction: auipc a0, 0x0<br>
+<li>Opcode: 0010111 (7 bits)<br>
+<li>Immediate: 0x0(20 bits)<br>
+<li>Destination Register (rd): a0 (x10, 5 bits)<br>
+
+### Breakdown:<br>
+<li>Immediate (20 bits): 0000 0000 0000 0000 0000 <br>
+<li>rd (a0 = x10): 01111<br>
+<li>Opcode: 0010111<br>
+
+### Machine Code:<br>
+<li>Binary: 0000 0000 0000 0000 0000 0101 0001 0111<br>
+<li>Hex: 00000517<br>
