@@ -41,12 +41,12 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <li>Destination Register (rd): a0 (x10, 5 bits)<br>
 
 ### Breakdown:<br>
-<li>Immediate (20 bits): 000000000000 00100001<br>
+<li>Immediate (20 bits): 0000 0000 0000 0010 0001<br>
 <li>rd (a0 = x10): 01010<br>
 <li>Opcode: 0110111<br>
 
 ### Machine Code:<br>
-<li>Binary: 00000000000000100001010100110111<br>
+<li>Binary: 0000 0000 0000 0010 0001 0101 0011 0111<br>
 <li>Hex: 00021537<br>
   
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/33f1af12-9f3f-4eb7-aa4f-4c271ead71d2" /><br>
@@ -55,7 +55,7 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <li>Immediate: -16 (12 bits)<br>
 <li>Source Register (rs1): sp (x2, 5 bits)<br>
 <li>Destination Register (rd): sp (x2, 5 bits)<br>
-<li></li>Function (funct3): 000 (3 bits)<br>
+<li>Function (funct3): 000 (3 bits)<br>
 
 ### Breakdown:<br>
 <li>Immediate (12 bits): 1111 1111 0000<br>
