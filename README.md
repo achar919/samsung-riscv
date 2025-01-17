@@ -225,3 +225,22 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 ### Machine Code:<br>
 <li>Binary: 1111 1111 1111 1111 0000 0111 1001 0111<br>
 <li>Hex: ffff0797<br>
+
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/89880eec-a7fe-465d-813e-03e72c99ae06" /><br>
+### 2) Instruction: addi a5, a5, -220<br>
+<li>Opcode: 0010011 (7 bits)<br>
+<li>Immediate: -220 (12 bits)<br>
+<li>Source Register (rs1): a5 (x15, 5 bits)<br>
+<li>Destination Register (rd): a5 (x15, 5 bits)<br>
+<li>Function (funct3): 000 (3 bits)<br>
+
+### Breakdown:<br>
+<li>Immediate (12 bits): <br>
+<li>rs1 (a5 = x15): 01111<br>
+<li>funct3: 000<br>
+<li>rd (a5 = x15): 01111<br>
+<li>Opcode: 0010011<br>
+
+### Machine Code:<br>
+<li>Binary: 1111 0100 0100 0111 1000 0111 1001 0011<br>
+<li>Hex: f2478793<br>
