@@ -145,3 +145,11 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <li>Hex: 00113423<br>
 
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/cfab5b3b-1884-4904-90c0-71c7f723802d" /><b>
+### 7) Instruction: jal ra, 10408(sp)<br>
+<li>Opcode: 1101111 (7 bits)<br>
+<li>Immediate: 10408 (20 bits)<br>
+<li>Destination Register (rd): ra (x1, 5 bits)<br>
+
+### Machine Code:<br>
+<li>Binary:  0011 0100 0000 0000 0000 0000 1110 1111 <br>
+<li>Hex: 340000ef<br>
