@@ -50,7 +50,7 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <li>Hex: 00021537<br>
   
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/33f1af12-9f3f-4eb7-aa4f-4c271ead71d2" /><br>
-### 1) Instruction: addi sp, sp, -16<br>
+### 2) Instruction: addi sp, sp, -16<br>
 <li>Opcode: 0010011 (7 bits)<br>
 <li>Immediate: -16 (12 bits)<br>
 <li>Source Register (rs1): sp (x2, 5 bits)<br>
