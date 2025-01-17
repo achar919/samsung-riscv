@@ -69,7 +69,7 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <li>Hex: ff010113<br>
 
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/c085695d-6951-4e19-be49-8fc8b6edcd4a" /><br>
-### 2) Instruction: li a2, 210<br>
+### 3) Instruction: li a2, 210<br>
 <li>Opcode: 0010011 (7 bits)<br>
 <li>Immediate: 210 (12 bits)<br>
 <li>Source Register (rs1): (00000 5 bits)<br>
@@ -86,3 +86,22 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 ### Machine Code:<br>
 <li>Binary: 0000 1101 0010 0000 0000 0110 0001 0011<br>
 <li>Hex: 0d200613<br>
+
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/e97828aa-c277-40a6-9bf5-dbeeb4bff6fa" /><br>
+### 4) Instruction: li a1, 20<br>
+<li>Opcode: 0010011 (7 bits)<br>
+<li>Immediate: 20 (12 bits)<br>
+<li>Source Register (rs1): (00000 5 bits)<br>
+<li>Destination Register (rd): a1 (x11, 5 bits)<br>
+<li>Function (funct3): 000 (3 bits)<br>
+
+### Breakdown:<br>
+<li>Immediate (12 bits): 0000 0001 0100<br>
+<li>rs1: 00000<br>
+<li>funct3: 000<br>
+<li>rd (a1 = x11): 01011<br>
+<li>Opcode: 0010011<br>
+
+### Machine Code:<br>
+<li>Binary: 0000 0001 0100 0000 0000 0101 1001 0011<br>
+<li>Hex: 01400593<br>
