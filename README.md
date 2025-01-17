@@ -235,7 +235,7 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <li>Function (funct3): 000 (3 bits)<br>
 
 ### Breakdown:<br>
-<li>Immediate (12 bits): <br>
+<li>Immediate (12 bits): 1111 0100 0100 <br>
 <li>rs1 (a5 = x15): 01111<br>
 <li>funct3: 000<br>
 <li>rd (a5 = x15): 01111<br>
@@ -257,7 +257,7 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <li>Hex: 00078863<br>
 
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/d1316c6e-907a-47bb-8274-455e1edb9056" /><br>
-### 11) Instruction: auipc a0, 0x0<br>
+### 14) Instruction: auipc a0, 0x0<br>
 <li>Opcode: 0010111 (7 bits)<br>
 <li>Immediate: 0x0(20 bits)<br>
 <li>Destination Register (rd): a0 (x10, 5 bits)<br>
@@ -270,3 +270,22 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 ### Machine Code:<br>
 <li>Binary: 0000 0000 0000 0000 0000 0101 0001 0111<br>
 <li>Hex: 00000517<br>
+
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/51651d5a-0b5e-4bc7-8140-c59ceff17a77" /><br>
+### 15) Instruction: addi a0, a0, 272<br>
+<li>Opcode: 0010011 (7 bits)<br>
+<li>Immediate: 272 (12 bits)<br>
+<li>Source Register (rs1): a0 (x10, 5 bits)<br>
+<li>Destination Register (rd): a0 (x10, 5 bits)<br>
+<li>Function (funct3): 000 (3 bits)<br>
+
+### Breakdown:<br>
+<li>Immediate (12 bits): 0001 0001 0000  <br>
+<li>rs1 (a0 = x10): 01010<br>
+<li>funct3: 000<br>
+<li>rd (a0 = x10): 01010<br>
+<li>Opcode: 0010011<br>
+
+### Machine Code:<br>
+<li>Binary:0001 0001 0000 0101 0000 0101 0001 0011<br>
+<li>Hex: 11050513<br>
