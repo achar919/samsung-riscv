@@ -330,8 +330,8 @@ Execution Stage<br>
 ## 📍AND
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/2a2c9a5e-db77-4278-a8eb-51e3ba7d4385" /><br>
 ### Values Stored in Registers:
-<li>ID_EX_A holds 3, corresponding to the value in register R1.<br>
-<li>ID_EX_B holds 1, corresponding to the value in register R3.<br>
+<li>ID_EX_A holds 1, corresponding to the value in register R1.<br>
+<li>ID_EX_B holds 3, corresponding to the value in register R3.<br>
   
 ### Instruction Fetching:<br>
 <li>EX_MEM_IR signal shows the value 0x0230A400, which is the 32-bit instruction for AND R8, R1, R3.<br>
