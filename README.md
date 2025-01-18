@@ -313,7 +313,7 @@ Memory Stage<br>
 Execution Stage<br>
 <li>EX_MEM_ALUOUT`: ALU output.<br>
   
-### HARCODED ISA
+### HARDCODED ISA
 <li>MEM[0] <= 32'h02208300;         // add r6,r1,r2.(i1)<br>
 <li>MEM[1] <= 32'h02209380;         //sub r7,r1,r2.(i2)<br>
 <li>MEM[2] <= 32'h0230a400;         //and r8,r1,r3.(i3)<br>
@@ -432,3 +432,18 @@ Execution Stage<br>
 ### Annotations:<br>
 <li>Output of ADDI will be 9: Explains that the value in R4 (4) added to the immediate value (5) results in 9..<br>
 <li>32 bits instruction for ADDI R12, R4, 5: Shows the binary representation of the ADDI instruction..<br
+                                                                                                        
+  ## 📍SW                                                                                                        
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/28dd1778-5341-46d5-ab54-a917f8abc84b" /><br>
+### Instruction: SW r3,r1,2<br>
+<li>This instruction performs an "Store Word" (SW) operation. It stores the immediate value 2 to the value in register R1 and stores the result in register R3..<br>
+  
+### Waveform Signals:<br>
+<li>EX_MEM_IR[31:0]: The instruction register for the Execution/Memory (EX/MEM) pipeline stage, holding the 32-bit instruction 0x00209181.<br>
+<li>ID_EX_A[31:0]: The value of register R1.<br>
+<li>ID_EX_IMMEDIATE[31:0]: The value of register 2.<br>
+<li>EX_MEM_ALUOUT[31:0]: The output of the Arithmetic Logic Unit (ALU) after performing the SW operation.<br>
+  
+### Waveform Details:<br>
+<li>Values in Registers and Immediate: The value stored in R1 is 1, and the immediate value is 2.<br>
+<li>SW Operation: The SW operation adds these values. The result is 3, which is stored in R3..<br>
