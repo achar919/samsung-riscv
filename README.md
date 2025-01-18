@@ -312,6 +312,7 @@ Memory Stage<br>
 <li>EX_MEM_IR`: Instruction Register.<br>
 Execution Stage<br>
 <li>EX_MEM_ALUOUT`: ALU output.<br>
+  
 <li>MEM[0] <= 32'h02208300;         // add r6,r1,r2.(i1)<br>
 <li>MEM[1] <= 32'h02209380;         //sub r7,r1,r2.(i2)<br>
 <li>MEM[2] <= 32'h0230a400;         //and r8,r1,r3.(i3)<br>
@@ -321,6 +322,7 @@ Execution Stage<br>
 <li>MEM[6] <= 32'h00520600;         //addi r12,r4,5.(i7)<br>
 <li>MEM[7] <= 32'h00209181;         //sw r3,r1,2.(i8)<br>
 <li>MEM[8] <= 32'h00208681;         //lw r13,r1,2.(i9)<br>
+  
 ## 📍ADD
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/a8237edf-f024-4f70-b71e-d0cfe529eb68" /><br>
 
