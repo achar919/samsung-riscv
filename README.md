@@ -312,4 +312,13 @@ Memory Stage<br>
 <li>EX_MEM_IR`: Instruction Register.<br>
 Execution Stage<br>
 <li>EX_MEM_ALUOUT`: ALU output.<br>
+  
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/a8237edf-f024-4f70-b71e-d0cfe529eb68" /><br>
+### Values Stored in Two Different Registers:
+<li>The waveform indicates that the values 1 and 2 are stored in registers r1 and r2 respectively (ID_EX_A and ID_EX_B).<br>
+  
+### 32-bit Instruction for ADD R6, R2, R1:
+<li>The instruction 0x02208300 represents the operation add r6, r1, r2. This instruction tells the processor to add the values in registers r1 and r2 and store the result in register r6.<br>
+
+### Output of ADD Operation:
+<li>The ALU performs the addition 1 + 2, resulting in 3, which is shown in the EX_MEM_ALUOUT signal.<br>
