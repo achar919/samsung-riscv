@@ -312,7 +312,7 @@ Memory Stage<br>
 <li>EX_MEM_IR`: Instruction Register.<br>
 Execution Stage<br>
 <li>EX_MEM_ALUOUT`: ALU output.<br>
-  
+![Image](https://github.com/user-attachments/assets/68ecfefe-b019-43cb-a593-ae92a7e10d9c)  
 ## 📍ADD
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/a8237edf-f024-4f70-b71e-d0cfe529eb68" /><br>
 
