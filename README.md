@@ -411,6 +411,24 @@ Execution Stage<br>
 <li>SLT Operation: The SLT operation compares these values. Since 2 < 4, the output is 1, indicating R2 is less than R4.<br>
   
 ### Annotations:<br>
-<li>Values stored in two different registers: Highlighting the values of R2 and R4.<br>
 <li>Output of SLT will be 1: Explains that if the value in R2 is less than R4, the result will be 1; otherwise, it will be 0.<br>
 <li>32 bits instruction for SLT R1, R2, R4: Shows the binary representation of the SLT instruction.<br>
+
+   ## 📍ADDI
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/136b1cfa-4e2e-4305-b65f-71af7fab03d0" /><br>
+### Instruction: ADDI R12, R4, 5<br>
+<li>This instruction performs an "Add Immediate" (ADDI) operation. It adds the immediate value 5 to the value in register R4 and stores the result in register R12..<br>
+  
+### Waveform Signals:<br>
+<li>EX_MEM_IR[31:0]: The instruction register for the Execution/Memory (EX/MEM) pipeline stage, holding the 32-bit instruction 0x00520600.<br>
+<li>ID_EX_A[31:0]: The value of register R4.<br>
+<li>ID_EX_IMMEDIATE[31:0]: The value of register 5.<br>
+<li>EX_MEM_ALUOUT[31:0]: The output of the Arithmetic Logic Unit (ALU) after performing the ADDI operation.<br>
+  
+### Waveform Details:<br>
+<li>Values in Registers and Immediate: The value stored in R4 is 4, and the immediate value is 5.<br>
+<li>ADDI Operation: The ADDI operation adds these values. The result is 9, which is stored in R12..<br>
+  
+### Annotations:<br>
+<li>Output of ADDI will be 9: Explains that the value in R4 (4) added to the immediate value (5) results in 9..<br>
+<li>32 bits instruction for ADDI R12, R4, 5: Shows the binary representation of the ADDI instruction..<br
