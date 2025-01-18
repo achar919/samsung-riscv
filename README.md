@@ -313,7 +313,7 @@ Memory Stage<br>
 Execution Stage<br>
 <li>EX_MEM_ALUOUT`: ALU output.<br>
   
-##📍ADD
+## 📍ADD
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/a8237edf-f024-4f70-b71e-d0cfe529eb68" /><br>
 
 ### Values Stored in Two Different Registers:
