@@ -301,3 +301,5 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 ## 📌Task 4
 👉Functional Simulation of RISC-V Core
 ### Set Up Simulation Environment:<br>
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/42e468ef-b947-4dd2-b13e-02bc8d2e784e" /><br>
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/904e09b8-b649-467c-b5c1-fcc7d44f49ae" /><br>
