@@ -326,7 +326,6 @@ Execution Stage<br>
   
 ## 📍ADD
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/a8237edf-f024-4f70-b71e-d0cfe529eb68" /><br>
-
 ### Values Stored in Two Different Registers:
 <li>The waveform indicates that the values 1 and 2 are stored in registers r1 and r2 respectively (ID_EX_A and ID_EX_B).<br>
   
@@ -338,6 +337,19 @@ Execution Stage<br>
 
 ## 📍SUB
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/8c3a8131-6a26-4777-9dbe-b44ee129ab07" /><br>
+### Values Stored in Registers:
+<li>ID_EX_A holds 1, corresponding to the value in register R1.<br>
+<li>ID_EX_B holds 2, corresponding to the value in register R2.<br>
+  
+### Instruction Fetching:<br>
+<li>EX_MEM_IR signal shows the value 0x02209380, which is the 32-bit instruction for SUB R7, R1, R2.<br>
+  
+### ALU Operation:<br>
+<li>The output of the ALU operation EX_MEM_ALUOUT shows F. This is the result of the subtraction operation 1 & 2:<br>
+<li>1 in binary is 0001<br>
+<li>2 in binary is 0010<br>
+<li>subtraction of 0001 - 0010 results in FFFF, which is F in hexadecimal.<br>
+  
 ## 📍AND
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/2a2c9a5e-db77-4278-a8eb-51e3ba7d4385" /><br>
 ### Values Stored in Registers:
