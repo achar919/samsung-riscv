@@ -319,7 +319,7 @@ Execution Stage<br>
 <li>MEM[2] <= 32'h0230a400;         //and r8,r1,r3.(i3)<br>
 <li>MEM[3] <= 32'h02513480;         //or r9,r2,r5.(i4)<br>
 <li>MEM[4] <= 32'h0240c500;         //xor r10,r1,r4.(i5)<br>
-<li>MEM[5] <= 32'h02415580;         //slt r11,r2,r4.(i6)<br>
+<li>MEM[5] <= 32'h02415580;         //slt r1,r2,r4.(i6)<br>
 <li>MEM[6] <= 32'h00520600;         //addi r12,r4,5.(i7)<br>
 <li>MEM[7] <= 32'h00209181;         //sw r3,r1,2.(i8)<br>
 <li>MEM[8] <= 32'h00208681;         //lw r13,r1,2.(i9)<br>
@@ -394,3 +394,23 @@ Execution Stage<br>
 <li>1 in binary is 0001<br>
 <li>4 in binary is 0100<br>
 <li>The bitwise XOR operation (0001 ^ 0100) results in 5 (binary: 0101)..<br>
+
+ ## 📍SLT 
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/45ccfe89-9514-47fb-9924-02a76b00b5d5" /><br>
+### Instruction: SLT R1, R2, R4<br>
+<li>This instruction performs a "Set Less Than" (SLT) operation. It compares the values in registers R2 and R4 and sets the destination register R1 to 1 if the value in R2 is less than the value in R4; otherwise, it sets R1 to 0.<br>
+  
+### Waveform Signals:<br>
+<li>EX_MEM_IR[31:0]: The instruction register for the Execution/Memory (EX/MEM) pipeline stage, holding the 32-bit instruction 0x20241833.<br>
+<li>ID_EX_A[31:0]: The value of register R2.<br>
+<li>ID_EX_B[31:0]: The value of register R4.<br>
+<li>EX_MEM_ALUOUT[31:0]: The output of the Arithmetic Logic Unit (ALU) after performing the SLT operation.<br>
+  
+### Waveform Details:<br>
+<li>Values in Registers: The values stored in R2 and R4 are 2 and 4, respectively.<br>
+<li>SLT Operation: The SLT operation compares these values. Since 2 < 4, the output is 1, indicating R2 is less than R4.<br>
+  
+### Annotations:<br>
+<li>Values stored in two different registers: Highlighting the values of R2 and R4.<br>
+<li>Output of SLT will be 1: Explains that if the value in R2 is less than R4, the result will be 1; otherwise, it will be 0.<br>
+<li>32 bits instruction for SLT R1, R2, R4: Shows the binary representation of the SLT instruction.<br>
