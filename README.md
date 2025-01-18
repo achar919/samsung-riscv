@@ -401,7 +401,7 @@ Execution Stage<br>
 <li>This instruction performs a "Set Less Than" (SLT) operation. It compares the values in registers R2 and R4 and sets the destination register R1 to 1 if the value in R2 is less than the value in R4; otherwise, it sets R1 to 0.<br>
   
 ### Waveform Signals:<br>
-<li>EX_MEM_IR[31:0]: The instruction register for the Execution/Memory (EX/MEM) pipeline stage, holding the 32-bit instruction 0x20241833.<br>
+<li>EX_MEM_IR[31:0]: The instruction register for the Execution/Memory (EX/MEM) pipeline stage, holding the 32-bit instruction 0x02415580.<br>
 <li>ID_EX_A[31:0]: The value of register R2.<br>
 <li>ID_EX_B[31:0]: The value of register R4.<br>
 <li>EX_MEM_ALUOUT[31:0]: The output of the Arithmetic Logic Unit (ALU) after performing the SLT operation.<br>
