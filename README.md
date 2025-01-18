@@ -313,7 +313,9 @@ Memory Stage<br>
 Execution Stage<br>
 <li>EX_MEM_ALUOUT`: ALU output.<br>
   
+##📍ADD
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/a8237edf-f024-4f70-b71e-d0cfe529eb68" /><br>
+
 ### Values Stored in Two Different Registers:
 <li>The waveform indicates that the values 1 and 2 are stored in registers r1 and r2 respectively (ID_EX_A and ID_EX_B).<br>
   
