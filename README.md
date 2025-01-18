@@ -297,3 +297,7 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 ### Machine Code:<br>
 <li>Binary:0001 0001 0000 0101 0000 0101 0001 0011<br>
 <li>Hex: 11050513<br>
+
+## 📌Task 4
+👉Functional Simulation of RISC-V Core
+### Set Up Simulation Environment:<br>
