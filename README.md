@@ -447,3 +447,18 @@ Execution Stage<br>
 ### Waveform Details:<br>
 <li>Values in Registers and Immediate: The value stored in R1 is 1, and the immediate value is 2.<br>
 <li>SW Operation: The SW operation adds these values. The result is 3, which is stored in R3..<br>
+
+  ## 📍LW   
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/b5899390-3ba7-406e-8978-c4b0391cd987" /><br>
+### Instruction: LW R13,R1,2<br>
+<li>This instruction performs an "Load Word" (lW) operation. It stores the immediate value 2 to the value in register R1 and stores the result in register R13..<br>
+  
+### Waveform Signals:<br>
+<li>EX_MEM_IR[31:0]: The instruction register for the Execution/Memory (EX/MEM) pipeline stage, holding the 32-bit instruction 0x00208681.<br>
+<li>ID_EX_A[31:0]: The value of register R1.<br>
+<li>ID_EX_IMMEDIATE[31:0]: The value of register 2.<br>
+<li>EX_MEM_ALUOUT[31:0]: The output of the Arithmetic Logic Unit (ALU) after performing the SW operation.<br>
+  
+### Waveform Details:<br>
+<li>Values in Registers and Immediate: The value stored in R1 is 1, and the immediate value is 2.<br>
+<li>LW Operation: The LW operation adds these values. The result is 3, which is stored in R13..<br>
