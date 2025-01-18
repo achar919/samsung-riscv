@@ -324,6 +324,10 @@ Execution Stage<br>
 
 ### Output of ADD Operation:
 <li>The ALU performs the addition 1 + 2, resulting in 3, which is shown in the EX_MEM_ALUOUT signal.<br>
-  
+
 ## 📍SUB
-<img width="960" alt="Image" src="https://github.com/user-attachments/assets/8c3a8131-6a26-4777-9dbe-b44ee129ab07" />
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/8c3a8131-6a26-4777-9dbe-b44ee129ab07" /><br>
+## 📍AND
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/2a2c9a5e-db77-4278-a8eb-51e3ba7d4385" /><br>
+### Output of AND Operation:
+<li>The ALU performs the addition 1 AND 3, resulting in 1, which is shown in the EX_MEM_ALUOUT signal.<br>
