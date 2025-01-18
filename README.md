@@ -324,3 +324,6 @@ Execution Stage<br>
 
 ### Output of ADD Operation:
 <li>The ALU performs the addition 1 + 2, resulting in 3, which is shown in the EX_MEM_ALUOUT signal.<br>
+  
+## 📍SUB
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/8c3a8131-6a26-4777-9dbe-b44ee129ab07" />
