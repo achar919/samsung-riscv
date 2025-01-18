@@ -431,7 +431,7 @@ Execution Stage<br>
   
 ### Annotations:<br>
 <li>Output of ADDI will be 9: Explains that the value in R4 (4) added to the immediate value (5) results in 9..<br>
-<li>32 bits instruction for ADDI R12, R4, 5: Shows the binary representation of the ADDI instruction..<br
+<li>32 bits instruction for ADDI R12, R4, 5: Shows the binary representation of the ADDI instruction..<br>
 
 ## 📍SW                                                                                                        
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/28dd1778-5341-46d5-ab54-a917f8abc84b" /><br>
