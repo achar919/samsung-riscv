@@ -329,5 +329,15 @@ Execution Stage<br>
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/8c3a8131-6a26-4777-9dbe-b44ee129ab07" /><br>
 ## 📍AND
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/2a2c9a5e-db77-4278-a8eb-51e3ba7d4385" /><br>
-### Output of AND Operation:
-<li>The ALU performs the addition 1 AND 3, resulting in 1, which is shown in the EX_MEM_ALUOUT signal.<br>
+### Values Stored in Registers:
+<li>ID_EX_A holds 3, corresponding to the value in register R1.<br>
+<li>ID_EX_B holds 1, corresponding to the value in register R3.<br>
+  
+### Instruction Fetching:<br>
+<li>EX_MEM_IR signal shows the value 0x0230A400, which is the 32-bit instruction for AND R8, R1, R3.<br>
+  
+### ALU Operation:<br>
+<li>The output of the ALU operation EX_MEM_ALUOUT shows 1. This is the result of the bitwise AND operation 3 & 1:<br>
+<li>3 in binary is 0011<br>
+<li>1 in binary is 0001<br>
+<li>Bitwise AND of 0011 & 0001 results in 0001, which is 1 in decimal.<br>
