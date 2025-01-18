@@ -313,6 +313,7 @@ Memory Stage<br>
 Execution Stage<br>
 <li>EX_MEM_ALUOUT`: ALU output.<br>
   
+### HARCODED ISA
 <li>MEM[0] <= 32'h02208300;         // add r6,r1,r2.(i1)<br>
 <li>MEM[1] <= 32'h02209380;         //sub r7,r1,r2.(i2)<br>
 <li>MEM[2] <= 32'h0230a400;         //and r8,r1,r3.(i3)<br>
