@@ -379,3 +379,18 @@ Execution Stage<br>
 <li>2 in binary is 0010<br>
 <li>5 in binary is 0101<br>
 <li>The bitwise OR operation (0010 | 0101) results in 7 (binary: 0111)..<br>
+  
+## 📍XOR
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/0157426e-1dbe-4351-87f0-023bee90b0ed" /><br>
+### Values Stored in Registers:
+<li>ID_EX_A holds 1, corresponding to the value in register R1.<br>
+<li>ID_EX_B holds 4, corresponding to the value in register R4.<br>
+  
+### Instruction Fetching:<br>
+<li>EX_MEM_IR signal shows the value 0x0240c500, which is the 32-bit instruction for XOR R10, R1, R4.<br>
+  
+### ALU Operation:<br>
+<li>The output of the ALU operation EX_MEM_ALUOUT shows 5. This is the result of the bitwise OR operation 1 & 4:<br>
+<li>1 in binary is 0001<br>
+<li>4 in binary is 0100<br>
+<li>The bitwise XOR operation (0001 ^ 0100) results in 5 (binary: 0101)..<br>
