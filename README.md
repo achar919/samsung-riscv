@@ -414,7 +414,7 @@ Execution Stage<br>
 <li>Output of SLT will be 1: Explains that if the value in R2 is less than R4, the result will be 1; otherwise, it will be 0.<br>
 <li>32 bits instruction for SLT R1, R2, R4: Shows the binary representation of the SLT instruction.<br>
 
-   ## 📍ADDI
+## 📍ADDI
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/136b1cfa-4e2e-4305-b65f-71af7fab03d0" /><br>
 ### Instruction: ADDI R12, R4, 5<br>
 <li>This instruction performs an "Add Immediate" (ADDI) operation. It adds the immediate value 5 to the value in register R4 and stores the result in register R12..<br>
@@ -433,9 +433,9 @@ Execution Stage<br>
 <li>Output of ADDI will be 9: Explains that the value in R4 (4) added to the immediate value (5) results in 9..<br>
 <li>32 bits instruction for ADDI R12, R4, 5: Shows the binary representation of the ADDI instruction..<br
                                                                                                         
-  ## 📍SW                                                                                                        
+## 📍SW                                                                                                        
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/28dd1778-5341-46d5-ab54-a917f8abc84b" /><br>
-### Instruction: SW r3,r1,2<br>
+### Instruction: SW R3,R1,2<br>
 <li>This instruction performs an "Store Word" (SW) operation. It stores the immediate value 2 to the value in register R1 and stores the result in register R3..<br>
   
 ### Waveform Signals:<br>
