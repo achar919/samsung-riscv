@@ -352,3 +352,18 @@ Execution Stage<br>
 <li>3 in binary is 0011<br>
 <li>1 in binary is 0001<br>
 <li>Bitwise AND of 0011 & 0001 results in 0001, which is 1 in decimal.<br>
+  
+## 📍OR
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/91cd8741-8feb-4cea-b2d4-73ded3f1a15c" /><br>
+### Values Stored in Registers:
+<li>ID_EX_A holds 2, corresponding to the value in register R2.<br>
+<li>ID_EX_B holds 5, corresponding to the value in register R5.<br>
+  
+### Instruction Fetching:<br>
+<li>EX_MEM_IR signal shows the value 0x02513480, which is the 32-bit instruction for AND R9, R2, R5.<br>
+  
+### ALU Operation:<br>
+<li>The output of the ALU operation EX_MEM_ALUOUT shows 1. This is the result of the bitwise OR operation 2 & 5:<br>
+<li>2 in binary is 0010<br>
+<li>5 in binary is 0101<br>
+<li>The bitwise OR operation (0010 | 0101) results in 7 (binary: 0111)..<br>
