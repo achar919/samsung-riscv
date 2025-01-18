@@ -305,3 +305,11 @@ Run the simulation and observe the performance under the -O1 and -Ofast compiler
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/904e09b8-b649-467c-b5c1-fcc7d44f49ae" /><br>
 <img width="960" alt="Image" src="https://github.com/user-attachments/assets/021ab6b0-3aa3-4c35-a1e2-834c38dc6f2e" /><br>
 ### Run Functional Simulation:
+NOTE<br>
+<li>ID_EX_A`: Register A.<br>
+<li>ID_EX_B`: Register B.<br>
+Memory Stage<br>
+<li>EX_MEM_IR`: Instruction Register.<br>
+Execution Stage<br>
+<li>EX_MEM_ALUOUT`: ALU output.<br>
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/a8237edf-f024-4f70-b71e-d0cfe529eb68" /><br>
