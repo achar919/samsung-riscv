@@ -1,11 +1,10 @@
-# samsung-riscv
-## 📌Task 1
-
-C program using leafpad editor in terminal on ubuntu<br>
+# samsung-riscv<br>
+## 📌Task 1<br>
+👉C program using leafpad editor in terminal on ubuntu<br>
 
 <img width="960" alt="Screenshot 2025-01-06 192801" src="https://github.com/user-attachments/assets/f20799a3-58dc-474f-8e15-5aa4c79c781c" /><br>
 
-c program code converted into assembly code<br>
+👉c program code converted into assembly code<br>
 
 <img width="960" alt="Screenshot 2025-01-07 213158" src="https://github.com/user-attachments/assets/1a542484-203d-4cdb-8498-aeb32e441237" /><br>
 <img width="960" alt="Screenshot 2025-01-07 213352" src="https://github.com/user-attachments/assets/a2eca722-0ae6-4bb3-80f2-d3f9a9567b98" /><br>
@@ -14,13 +13,13 @@ c program code converted into assembly code<br>
 
 ## 📌Task 2
 
-Run the simulation and observe the performance under the -O1 and -Ofast compiler optimization flags.<br>
+### Run the simulation and observe the performance under the -O1 and -Ofast compiler optimization flags.<br>
 
 👉-Ofast compiler optimization flag is used and debugging using the spike debugger<br>
 
 <img width="960" alt="Screenshot 2025-01-12 094244" src="https://github.com/user-attachments/assets/95701be4-f5ed-40a8-a497-0add69554240" /><br>
 
--Ofast compiler optimization flag assembly code<br>
+👉-Ofast compiler optimization flag assembly code<br>
 
 <img width="960" alt="Screenshot 2025-01-12 102118" src="https://github.com/user-attachments/assets/8cfb70d0-888c-4fe8-a1c4-86d1089a7cc6" /><br>
 
