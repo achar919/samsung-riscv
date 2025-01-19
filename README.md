@@ -26,7 +26,7 @@
 👉-O1 compiler optimization flag is used and debugging using the spike debugger<br>
 <img width="960" alt="Screenshot 2025-01-12 101933" src="https://github.com/user-attachments/assets/f53b350b-5b17-4195-ba47-65e8abeb64cf" /><br>
 
--O1 compiler optimization flag assembly code<br>
+👉-O1 compiler optimization flag assembly code<br>
 <img width="960" alt="Screenshot 2025-01-12 102002" src="https://github.com/user-attachments/assets/657eddd6-d914-4981-b289-03d1971ff321" /><br>
 
 ## 📌Task 3
