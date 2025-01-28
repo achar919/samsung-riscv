@@ -465,4 +465,9 @@ Execution Stage<br>
 ## 📌Task 5<br>
 ### Smart Environmental Monitoring Station with Temperature & Humidity Sensor (IOT CLOUD)<br>
 ### Overview:<br>
-This project focuses on creating a basic environmental monitoring station using the VSDSquadron Mini and a combined temperature and humidity sensor (e.g., DHT11, ESP32). The system will continuously monitor and log temperature and humidity data, which can be used to analyze environmental trends, track weather patterns, or simply observe indoor/outdoor conditions.
+This project focuses on creating a basic environmental monitoring station using the VSDSquadron Mini and a combined temperature and humidity sensor (e.g., DHT11, ESP32). The system will continuously monitor and log temperature and humidity data, which can be used to analyze environmental trends, track weather patterns, or simply observe indoor/outdoor conditions.<br>
+### Components Required
+<li>VSDSquadron Mini<br>
+<li>DHT11 SENSOR<br>
+<li>ESP32 Nodemcu<br>
+<li>jumpers<br>
