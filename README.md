@@ -462,4 +462,5 @@ Execution Stage<br>
 <li>Values in Registers and Immediate: The value stored in R1 is 1, and the immediate value is 2.<br>
 <li>LW Operation: The LW operation adds these values. The result is 3, which is stored in R13..<br>
   
-## 📌Task 5
+## 📌Task 5<br>
+### Smart Environmental Monitoring Station with Temperature & Humidity Sensor (IOT CLOUD)<br>
