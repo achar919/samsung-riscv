@@ -507,4 +507,107 @@ Input (Binary)	Count Sequence
 
 ### CODE
 
-[VSD CODE.txt](https://github.com/user-attachments/files/19031082/VSD.CODE.txt)
+// Modulo counter implementation<br>
+#include <ch32v00x.h>  // Include the register definitions for the CH32V003<br>
+
+// LED Pin Definitions (connected to PD0, PD6, PD2)<br>
+#define LED1 GPIO_Pin_0  // LED 1 (LSB) - PD0<br>
+#define LED2 GPIO_Pin_6  // LED 2 (Bit 1) - PD6<br>
+#define LED3 GPIO_Pin_2  // LED 3 (MSB) - PD2<br>
+
+// Push Button Pin Definitions (connected to PD3, PD4, PD5)<br>
+#define BTN1 GPIO_Pin_3  // Push Button 1 (LSB) - PD3<br>
+#define BTN2 GPIO_Pin_4  // Push Button 2 (Bit 1) - PD4<br>
+#define BTN3 GPIO_Pin_5  // Push Button 3 (MSB) - PD5<br>
+
+void GPIO_Config(void);<br>
+void Delay(uint32_t delay);<br>
+uint8_t Read_Button_Input(void);<br>
+
+int main(void)<br>
+{
+    uint8_t target_value = 0;  // Holds the binary input value (0–7)<br>
+    uint8_t counter = 0;       // Current counter value<br>
+
+    SystemInit();      // System initialization<br>
+    GPIO_Config();     // Configure GPIO for LEDs and buttons<br>
+
+    // Initialize LEDs to OFF state (PD0, PD6, PD2 are all LOW)<br>
+    GPIO_WriteBit(GPIOD, LED1, Bit_RESET);  // LED1 (PD0) OFF<br>
+    GPIO_WriteBit(GPIOD, LED2, Bit_RESET);  // LED2 (PD6) OFF<br>
+    GPIO_WriteBit(GPIOD, LED3, Bit_RESET);  // LED3 (PD2) OFF<br>
+
+    while (1)<br>
+    {
+        // Read the input from the 3 push buttons (binary value 0–7)<br>
+        target_value = Read_Button_Input();<br>
+
+        // Wait until the user releases the buttons after holding<br>
+        while (GPIO_ReadInputDataBit(GPIOD, BTN3) || GPIO_ReadInputDataBit(GPIOD, BTN2) || GPIO_ReadInputDataBit(GPIOD, BTN1));<br>
+
+        // Run the counter from 0 to the target value<br>
+        while (counter <= target_value)<br>
+        {<br>
+            // Display the current counter value on LEDs<br>
+            GPIO_WriteBit(GPIOD, LED1, (counter & 0x01) ? Bit_SET : Bit_RESET);<br>
+            GPIO_WriteBit(GPIOD, LED2, (counter & 0x02) ? Bit_SET : Bit_RESET);<br>
+            GPIO_WriteBit(GPIOD, LED3, (counter & 0x04) ? Bit_SET : Bit_RESET);<br>
+
+            Delay(5000000);  // Wait 5 seconds for each count (5000000 cycles)<br>
+
+            counter++;  // Increment the counter<br>
+        }<br>
+
+        // Once the counter reaches the target value, stop the counting<br>
+        // All LEDs will stay at the final state<br>
+
+        // Reset counter for the next input<br>
+        counter = 0;<br>
+
+        // Add a small delay before accepting the next input<br>
+        Delay(1000000);  // 1-second delay before the next input<br>
+    }<br>
+}<br>
+
+void GPIO_Config(void)<br>
+{
+    GPIO_InitTypeDef GPIO_InitStructure = {0};<br>
+
+    // Enable clocks for GPIOD<br>
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);<br>
+
+    // Configure LEDs (PD0, PD6, PD2) as outputs<br>
+    GPIO_InitStructure.GPIO_Pin = LED1 | LED2 | LED3;<br>
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;<br>
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;  // Push-pull output<br>
+    GPIO_Init(GPIOD, &GPIO_InitStructure);<br>
+
+    // Configure push buttons (PD3, PD4, PD5) as inputs with pull-down resistors<br>
+    GPIO_InitStructure.GPIO_Pin = BTN1 | BTN2 | BTN3;<br>
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPD;  // Input with pull-down<br>
+    GPIO_Init(GPIOD, &GPIO_InitStructure);<br>
+}<br>
+
+void Delay(uint32_t delay)<br>
+{<br>
+    while (delay--)<br>
+        __NOP();  // Simple delay loop<br>
+}<br>
+
+uint8_t Read_Button_Input(void)<br>
+{<br>
+    // Read the input from the 3 push buttons (binary value 0-7)<br>
+    uint8_t input = 0;<br>
+
+    if (GPIO_ReadInputDataBit(GPIOD, BTN3) == Bit_SET) {<br>
+        input |= 0x04;  // Set bit 2 if BTN3 is pressed (4)<br>
+    }<br>
+    if (GPIO_ReadInputDataBit(GPIOD, BTN2) == Bit_SET) {<br>
+        input |= 0x02;  // Set bit 1 if BTN2 is pressed (2)<br>
+    }<br>
+    if (GPIO_ReadInputDataBit(GPIOD, BTN1) == Bit_SET) {<br>
+        input |= 0x01;  // Set bit 0 if BTN1 is pressed (1)<br>
+    }<br>
+
+    return input;  // Return the binary input (0 to 7)<br>
+}<br>
