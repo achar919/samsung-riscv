@@ -503,4 +503,4 @@ Input (Binary)	Count Sequence
 <li>LED 3: Connected to PD2 (Most Significant Bit - MSB) ->: RED/ Leftmost lED in the video<br>
 
 ## Circuit Diagram
-
+![Image](https://github.com/user-attachments/assets/81425b35-1e2c-4e8e-9fb6-ec19a270a140)<br>
