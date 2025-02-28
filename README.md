@@ -463,11 +463,44 @@ Execution Stage<br>
 <li>LW Operation: The LW operation adds these values. The result is 3, which is stored in R13..<br>
   
 ## 📌Task 5<br>
-### Smart Environmental Monitoring Station with Temperature & Humidity Sensor (IOT CLOUD)<br>
-### Overview:<br>
-This project focuses on creating a basic environmental monitoring station using the VSDSquadron Mini and a combined temperature and humidity sensor (e.g., DHT11, ESP32). The system will continuously monitor and log temperature and humidity data, which can be used to analyze environmental trends, track weather patterns, or simply observe indoor/outdoor conditions.<br>
+This task contains documentation for the implementation of a Modulo Counter (0–7) using the VSDSquadron Mini. The project showcases the practical application of digital logic and RISC-V architecture to perform a simple counting operation with user-defined input.
+
+### Overview
+The Modulo Counter increments values from 0 up to a user-specified input (via push buttons) and resets to 0. The current state of the counter is displayed on LEDs, providing a visual representation of the operation. This project uses GPIO pins for input (push buttons) and output (LEDs), configured using the PlatformIO IDE.
+
+### Counter Truth Table:
+Input (Binary)	Count Sequence
+0               0
+1              	0 → 1
+2	              0 → 1 → 2
+3	              0 → 1 → 2 → 3
+4             	0 → 1 → 2 → 3 → 4
+5              	0 → 1 → 2 → 3 → 4 → 5
+6	              0 → 1 → 2 → 3 → 4 → 5 → 6
+7             	0 → 1 → 2 → 3 → 4 → 5 → 6 → 7
+
 ### Components Required
-<li>VSDSquadron Mini<br>
-<li>DHT11 SENSOR<br>
-<li>ESP32 Nodemcu<br>
-<li>jumpers<br>
+
+<li>VSDSquadron Mini : RISC-V based SoC development kit.<br>
+<li>Push Buttons (3): For binary input (connected to GPIO pins).<br>
+<li>LEDs (3): To display the counter values.<br>
+<li>Breadboard and Jumper Wires: For prototyping and connections.<br>
+<li>Visual Studio Code: For software development.<br>
+<li>PlatformIO IDE: A professional IDE for embedded development.<br>
+
+## Hardware Connections
+
+## Inputs (Push Buttons):
+
+<li>Button 1: Connected to PD3 (Least Significant Bit - LSB) ->: Rightmost button in the video<br>
+<li>Button 2: Connected to PD4 (Bit 1)<br>
+<li>Button 3: Connected to PD5 (Most Significant Bit - MSB) ->: Lefttmost button in the video<br>
+
+### Outputs (LEDs):
+
+<li>LED 1: Connected to PD0 (Least Significant Bit - LSB) ->: Yellow/ Rightmost lED in the video<br>
+<li>LED 2: Connected to PD6 (Bit 1)<br>
+<li>LED 3: Connected to PD2 (Most Significant Bit - MSB) ->: RED/ Leftmost lED in the video<br>
+
+## Circuit Diagram
+
