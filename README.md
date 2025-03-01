@@ -471,14 +471,15 @@ The Modulo Counter increments values from 0 up to a user-specified input (via pu
 ### Counter Truth Table:
 
 | Input (Binary) | Count Sequence |<br>
+| -------------- | :------------- |
 | 0              |  0               |<br>
-| 1              	 |0 → 1           |<br>
-| 2	               |0 → 1 → 2       |<br>
-| 3	               |0 → 1 → 2 → 3   |<br>
-| 4             	 |0 → 1 → 2 → 3 → 4 |<br>
-| 5              	 |0 → 1 → 2 → 3 → 4 → 5 |<br>
-| 6	               |0 → 1 → 2 → 3 → 4 → 5 → 6 |<br>
-| 7             	 |0 → 1 → 2 → 3 → 4 → 5 → 6 → 7 |<br>
+| 1              |0 → 1           |<br>
+| 2	             |0 → 1 → 2       |<br>
+| 3	             |0 → 1 → 2 → 3   |<br>
+| 4              |0 → 1 → 2 → 3 → 4 |<br>
+| 5              |0 → 1 → 2 → 3 → 4 → 5 |<br>
+| 6	             |0 → 1 → 2 → 3 → 4 → 5 → 6 |<br>
+| 7              |0 → 1 → 2 → 3 → 4 → 5 → 6 → 7 |<br>
 
 ### Components Required
 
@@ -529,61 +530,55 @@ int main(void)<br>
 {
     uint8_t target_value = 0;  // Holds the binary input value (0–7)<br>
     uint8_t counter = 0;       // Current counter value<br>
-
     SystemInit();      // System initialization<br>
     GPIO_Config();     // Configure GPIO for LEDs and buttons<br>
 
-    // Initialize LEDs to OFF state (PD0, PD6, PD2 are all LOW)<br>
+  // Initialize LEDs to OFF state (PD0, PD6, PD2 are all LOW)<br>
     GPIO_WriteBit(GPIOD, LED1, Bit_RESET);  // LED1 (PD0) OFF<br>
     GPIO_WriteBit(GPIOD, LED2, Bit_RESET);  // LED2 (PD6) OFF<br>
     GPIO_WriteBit(GPIOD, LED3, Bit_RESET);  // LED3 (PD2) OFF<br>
 
-    while (1)<br>
-    {
+   while (1)<br>
+   {
         // Read the input from the 3 push buttons (binary value 0–7)<br>
         target_value = Read_Button_Input();<br>
 
-        // Wait until the user releases the buttons after holding<br>
+   // Wait until the user releases the buttons after holding<br>
         while (GPIO_ReadInputDataBit(GPIOD, BTN3) || GPIO_ReadInputDataBit(GPIOD, BTN2) || GPIO_ReadInputDataBit(GPIOD, BTN1));<br>
 
-        // Run the counter from 0 to the target value<br>
+   // Run the counter from 0 to the target value<br>
         while (counter <= target_value)<br>
         {<br>
             // Display the current counter value on LEDs<br>
             GPIO_WriteBit(GPIOD, LED1, (counter & 0x01) ? Bit_SET : Bit_RESET);<br>
             GPIO_WriteBit(GPIOD, LED2, (counter & 0x02) ? Bit_SET : Bit_RESET);<br>
             GPIO_WriteBit(GPIOD, LED3, (counter & 0x04) ? Bit_SET : Bit_RESET);<br>
-
-            Delay(5000000);  // Wait 5 seconds for each count (5000000 cycles)<br>
-
+    Delay(5000000);  // Wait 5 seconds for each count (5000000 cycles)<br>
             counter++;  // Increment the counter<br>
         }<br>
-
-        // Once the counter reaches the target value, stop the counting<br>
+    // Once the counter reaches the target value, stop the counting<br>
         // All LEDs will stay at the final state<br>
-
-        // Reset counter for the next input<br>
+    // Reset counter for the next input<br>
         counter = 0;<br>
 
-        // Add a small delay before accepting the next input<br>
-        Delay(1000000);  // 1-second delay before the next input<br>
+   // Add a small delay before accepting the next input<br>
+    Delay(1000000);  // 1-second delay before the next input<br>
     }<br>
 }<br>
 
 void GPIO_Config(void)<br>
 {
     GPIO_InitTypeDef GPIO_InitStructure = {0};<br>
-
-    // Enable clocks for GPIOD<br>
+   // Enable clocks for GPIOD<br>
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);<br>
 
-    // Configure LEDs (PD0, PD6, PD2) as outputs<br>
+  // Configure LEDs (PD0, PD6, PD2) as outputs<br>
     GPIO_InitStructure.GPIO_Pin = LED1 | LED2 | LED3;<br>
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;<br>
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;  // Push-pull output<br>
     GPIO_Init(GPIOD, &GPIO_InitStructure);<br>
 
-    // Configure push buttons (PD3, PD4, PD5) as inputs with pull-down resistors<br>
+   // Configure push buttons (PD3, PD4, PD5) as inputs with pull-down resistors<br>
     GPIO_InitStructure.GPIO_Pin = BTN1 | BTN2 | BTN3;<br>
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPD;  // Input with pull-down<br>
     GPIO_Init(GPIOD, &GPIO_InitStructure);<br>
@@ -599,7 +594,6 @@ uint8_t Read_Button_Input(void)<br>
 {<br>
     // Read the input from the 3 push buttons (binary value 0-7)<br>
     uint8_t input = 0;<br>
-
     if (GPIO_ReadInputDataBit(GPIOD, BTN3) == Bit_SET) {<br>
         input |= 0x04;  // Set bit 2 if BTN3 is pressed (4)<br>
     }<br>
@@ -610,7 +604,7 @@ uint8_t Read_Button_Input(void)<br>
         input |= 0x01;  // Set bit 0 if BTN1 is pressed (1)<br>
     }<br>
 
-    return input;  // Return the binary input (0 to 7)<br>
+   return input;  // Return the binary input (0 to 7)<br>
 }<br>
 
 ## DEMO VIDEO
